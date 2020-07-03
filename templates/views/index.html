@@ -1,0 +1,20 @@
+{% extends "template.html" %}
+{% block content %}
+  <div id ="indexPage">
+    <div id="contents">
+      <div id="leftPanel" class="leftPanel"></div>
+      <div id="contentsMain" class="mainPanel">
+        <div id ="indexPageTitle" class="siteTitleSize siteTitle">voiceConv</div>
+        <div id ="indexPageTitle" class="siteTitleSize siteTitle">by Google Speech-to-Text API</div>
+        <div class="subArea">
+          <form method="POST" action="/convVoice" enctype="multipart/form-data">
+              <span>select:</span>
+              <input type="file" id="voicefile" name="voicefile"></input>
+              <input type="submit" id="submit" value="send voice!"></input>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </div>
+{% endblock %}
