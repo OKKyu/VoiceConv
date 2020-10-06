@@ -1,5 +1,5 @@
 # Name
- VoiceConv by by Google Speech-to-Text API
+ VoiceConv by Google Speech-to-Text API
 
 # Overview
    モバイルアプリから送信された音声ファイルを、Google Speech APIを用いてテキスト変換するWebアプリです。  
@@ -7,15 +7,15 @@
    全て自己責任でお願いします。  
 
 # Requirement
- ・python3、python3-venv  
-   python2以前のバージョンでは動作確認していません。  
-   セットアップ用のシェルスクリプトも用意していますが、python3、python3-venvは既にインストール済みという前提で組んでいます。  
-   python3、python3-venvがない場合はユーザー様各自でパッケージ管理ソフトからインストールをして下さい。  
- ・その他依存ライブラリはrequirements.txtに記載してあります。  
-   特に重要なライブラリは以下の通りです。
-     google-cloud-speech  ：音声ファイルを文字列へ変換するAPI。
-     Flask                ：リクエストを受け、文字列をレスポンスとして返すWebアプリ。
-     gunicorn             ：flaskをデプロイするWebサーバー。
+- python3、python3-venv  
+python2以前のバージョンでは動作確認していません。  
+セットアップ用のシェルスクリプトも用意していますが、python3、python3-venvは既にインストール済みという前提で組んでいます。  
+python3、python3-venvがない場合はユーザー様各自でパッケージ管理ソフトからインストールをして下さい。  
+- その他依存ライブラリはrequirements.txtに記載してあります。  
+特に重要なライブラリは以下の通りです。  
+google-cloud-speech  ：音声ファイルを文字列へ変換するAPI。  
+Flask                ：リクエストを受け、文字列をレスポンスとして返すWebアプリ。  
+gunicorn             ：flaskをデプロイするWebサーバー。  
 
 # Download
   ルートフォルダ "VoiceConv" ごと好きな場所に格納して下さい。

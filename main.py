@@ -52,4 +52,4 @@ if __name__ == '__main__':
     
     #run
     if existsAuth is True:
-        app.run(host='192.168.1.9', debug=True, port=5005)
+        app.run(host='0.0.0.0', debug=True, port=5005)
