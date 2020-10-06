@@ -34,8 +34,10 @@ gunicorn             ：flaskをデプロイするWebサーバー。
     本アプリではgoogle-cloud-speech API を使用していますが、このAPIを実行するにはGoogle Cloud Platformへの
     アカウント登録およびAPIの有効化、そしてサービスアカウントキーとなるJSONファイルの読み込みが必要です。
     
-    キーファイルについては以下を参照して下さい。
-    https://cloud.google.com/speech-to-text/docs/quickstart-client-libraries
+    キーファイルについては以下を参照して下さい。  
+    &emsp;https://cloud.google.com/speech-to-text/docs/quickstart-client-libraries
+    尚、取得したキーファイルを環境変数へ設定する際にはrun.shの以下行に設定して下さい。  
+    &emsp;GOOGLE_APPLICATION_CREDENTIALS='' ←空文字列となっている箇所に取得したキーファイルのパスを指定して下さい。  
 
 - アプリの起動  
     コンソールでVoiceConvフォルダ直下をカレントディレクトリとし、以下を実行して下さい。  
