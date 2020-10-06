@@ -54,7 +54,7 @@ gunicorn             ：flaskをデプロイするWebサーバー。
 - 音声変換方法  
     音声の送信  
       スマホアプリから以下URLを送信して下さい。  
-        http://ホスト名:ポート番号/voiceConv  
+        `http://ホスト名:ポート番号/voiceConv`  
         
       httpメソッドはPOSTで送信して下さい。GETメソッドには未対応です。  
       input type=file 要素に音声ファイルを添えつけて送信して下さい。  
